@@ -19,7 +19,7 @@ const TacticalMap = () => {
         title="Otwórz w Google Maps"
       />
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.5!2d20.5584!3d52.2684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ec9e5115c59a7%3A0x95fe3cdfad48c498!2sSala%20Pod%20Kasztanowcami!5e0!3m2!1spl!2spl!4v1"
+        src="https://maps.google.com/maps?q=Wiejca%2074,%2005-085%20Wiejca&t=m&z=14&output=embed"
         className="w-full h-full border-0 invert-[0.93] hue-rotate-180 brightness-[0.7] contrast-[1.3] saturate-[0.3]"
         allowFullScreen
         loading="lazy"

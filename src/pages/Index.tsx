@@ -137,7 +137,7 @@ const Index = () => {
                 Godzina
               </span>
               <span className="font-['Cormorant_Garamond'] text-[clamp(1.5rem,3vw,2.2rem)] text-[#e4e2dd] font-light">
-                17:30 CET
+                17:00 CET
               </span>
             </div>
             <div>
