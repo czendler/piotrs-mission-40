@@ -19,10 +19,10 @@ const CountdownTimer = () => {
   const seconds = Math.floor((diff % 60000) / 1000);
 
   const units = [
-    { label: "DAYS", value: pad(days) },
-    { label: "HRS", value: pad(hours) },
+    { label: "DNI", value: pad(days) },
+    { label: "GODZ", value: pad(hours) },
     { label: "MIN", value: pad(minutes) },
-    { label: "SEC", value: pad(seconds) },
+    { label: "SEK", value: pad(seconds) },
   ];
 
   return (

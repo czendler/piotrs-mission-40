@@ -5,9 +5,9 @@ PRODID:-//Bond//MI6//EN
 BEGIN:VEVENT
 DTSTART:20260425T153000Z
 DTEND:20260426T000000Z
-SUMMARY:Piotr's 40th Birthday — CLASSIFIED
+SUMMARY:40. Urodziny Piotra — ŚCIŚLE TAJNE
 LOCATION:Sala pod Kasztanowcami, Wiejca 74, 05-085 Wiejca
-DESCRIPTION:Mission briefing: Level 40. Dress code: Bond.
+DESCRIPTION:Odprawa misyjna: Poziom 40. Dress code: Bond.
 STATUS:CONFIRMED
 END:VEVENT
 END:VCALENDAR`;
@@ -24,10 +24,10 @@ END:VCALENDAR`;
 export function getGoogleCalendarUrl() {
   const params = new URLSearchParams({
     action: "TEMPLATE",
-    text: "Piotr's 40th Birthday — CLASSIFIED",
+    text: "40. Urodziny Piotra — ŚCIŚLE TAJNE",
     dates: "20260425T153000Z/20260426T000000Z",
     location: "Sala pod Kasztanowcami, Wiejca 74, 05-085 Wiejca",
-    details: "Mission briefing: Level 40. Dress code: Bond.",
+    details: "Odprawa misyjna: Poziom 40. Dress code: Bond.",
   });
   return `https://calendar.google.com/calendar/render?${params.toString()}`;
 }
