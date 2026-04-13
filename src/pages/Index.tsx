@@ -49,7 +49,7 @@ const Index = () => {
         >
           <div className="w-2 h-2 rounded-full bg-[#b8860b] animate-pulse" />
           <span className="font-['Space_Mono'] text-[10px] tracking-[0.4em] text-[#e4e2dd]/25 uppercase">
-            Ściśle Tajne // Tylko Dla Twoich Oczu // Oddział MI6-PL
+            Ściśle Tajne // Tylko Dla Twoich Oczu // 
           </span>
         </motion.div>
 
@@ -94,8 +94,7 @@ const Index = () => {
               className="font-['Cormorant_Garamond'] text-[clamp(1rem,2vw,1.4rem)] text-[#e4e2dd]/50 leading-relaxed max-w-lg italic"
             >
               Twoja obecność jest wymagana na tajnym spotkaniu.
-              Zalecany strój galowy. Przygotuj się na wieczór
-              niezrównanej elegancji.
+              Zalecany strój gotowy do tańca.
             </motion.p>
           </div>
 
