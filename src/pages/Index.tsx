@@ -11,7 +11,7 @@ const ease = [0.22, 1, 0.36, 1];
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen bg-[#070709] cursor-none overflow-hidden selection:bg-[#8c1c13]/30 selection:text-[#e4e2dd]">
+    <div className="relative min-h-screen bg-[#070709] cursor-none overflow-hidden selection:bg-[#b8860b]/30 selection:text-[#e4e2dd]">
       <NoiseOverlay />
       <CustomCursor />
 
@@ -20,7 +20,7 @@ const Index = () => {
         <div
           className="absolute w-[60vw] h-[60vw] rounded-full opacity-[0.04] blur-[120px]"
           style={{
-            background: "radial-gradient(circle, #8c1c13 0%, transparent 70%)",
+            background: "radial-gradient(circle, #b8860b 0%, transparent 70%)",
             top: "10%",
             right: "-10%",
             animation: "drift1 25s ease-in-out infinite alternate",
@@ -47,7 +47,7 @@ const Index = () => {
           transition={{ duration: 1.2, ease, delay: 0.3 }}
           className="flex items-center gap-4 mb-[clamp(4rem,12vh,8rem)]"
         >
-          <div className="w-2 h-2 rounded-full bg-[#8c1c13] animate-pulse" />
+          <div className="w-2 h-2 rounded-full bg-[#b8860b] animate-pulse" />
           <span className="font-['Space_Mono'] text-[10px] tracking-[0.4em] text-[#e4e2dd]/25 uppercase">
             Ściśle Tajne // Tylko Dla Twoich Oczu // Oddział MI6-PL
           </span>
@@ -61,7 +61,7 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.4, ease, delay: 0.6 }}
             >
-              <p className="font-['Space_Mono'] text-[10px] tracking-[0.5em] text-[#8c1c13] mb-4 uppercase">
+              <p className="font-['Space_Mono'] text-[10px] tracking-[0.5em] text-[#b8860b] mb-4 uppercase">
                 Odprawia Misyjna №040
               </p>
               <h1
@@ -74,7 +74,7 @@ const Index = () => {
                 <span className="font-['Cormorant_Garamond'] text-[clamp(1.2rem,3vw,2.5rem)] text-[#e4e2dd]/40 font-light italic">
                   osiąga
                 </span>
-                <span className="font-['Space_Mono'] text-[clamp(3rem,8vw,7rem)] text-[#8c1c13] leading-none font-bold">
+                <span className="font-['Space_Mono'] text-[clamp(3rem,8vw,7rem)] text-[#b8860b] leading-none font-bold">
                   <TextScramble text="LVL 40" delay={1800} />
                 </span>
               </div>
@@ -125,7 +125,7 @@ const Index = () => {
           {/* Left — Details */}
           <div className="bg-[#0a0a0d] p-[clamp(1.5rem,3vw,3rem)] space-y-8">
             <div>
-              <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#8c1c13]/60 uppercase block mb-2">
+              <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#b8860b]/60 uppercase block mb-2">
                 Data
               </span>
               <span className="font-['Cormorant_Garamond'] text-[clamp(1.5rem,3vw,2.2rem)] text-[#e4e2dd] font-light">
@@ -133,7 +133,7 @@ const Index = () => {
               </span>
             </div>
             <div>
-              <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#8c1c13]/60 uppercase block mb-2">
+              <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#b8860b]/60 uppercase block mb-2">
                 Godzina
               </span>
               <span className="font-['Cormorant_Garamond'] text-[clamp(1.5rem,3vw,2.2rem)] text-[#e4e2dd] font-light">
@@ -141,7 +141,7 @@ const Index = () => {
               </span>
             </div>
             <div>
-              <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#8c1c13]/60 uppercase block mb-2">
+              <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#b8860b]/60 uppercase block mb-2">
                 Lokalizacja
               </span>
               <span className="font-['Cormorant_Garamond'] text-[clamp(1rem,2vw,1.4rem)] text-[#e4e2dd]/80 font-light leading-relaxed block">
