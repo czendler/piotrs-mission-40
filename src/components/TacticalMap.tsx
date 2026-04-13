@@ -8,7 +8,7 @@ const TacticalMap = () => {
       <div className="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-[#8c1c13]/40 z-10" />
       
       <div className="absolute top-2 left-4 font-['Space_Mono'] text-[9px] tracking-[0.3em] text-[#8c1c13]/50 z-10">
-        SAT-FEED // LIVE
+        PRZEKAZ SAT // NA ŻYWO
       </div>
 
       <iframe
@@ -17,7 +17,7 @@ const TacticalMap = () => {
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        title="Mission Location"
+        title="Lokalizacja Misji"
       />
     </div>
   );

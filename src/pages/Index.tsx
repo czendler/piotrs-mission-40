@@ -49,7 +49,7 @@ const Index = () => {
         >
           <div className="w-2 h-2 rounded-full bg-[#8c1c13] animate-pulse" />
           <span className="font-['Space_Mono'] text-[10px] tracking-[0.4em] text-[#e4e2dd]/25 uppercase">
-            Classified // Eyes Only // MI6-PL Division
+            Ściśle Tajne // Tylko Dla Twoich Oczu // Oddział MI6-PL
           </span>
         </motion.div>
 
@@ -62,7 +62,7 @@ const Index = () => {
               transition={{ duration: 1.4, ease, delay: 0.6 }}
             >
               <p className="font-['Space_Mono'] text-[10px] tracking-[0.5em] text-[#8c1c13] mb-4 uppercase">
-                Mission Briefing №040
+                Odprawia Misyjna №040
               </p>
               <h1
                 className="font-['Cormorant_Garamond'] text-[clamp(3.5rem,10vw,9rem)] leading-[0.85] text-[#e4e2dd] font-light"
@@ -72,7 +72,7 @@ const Index = () => {
               </h1>
               <div className="flex items-baseline gap-4 mt-4" style={{ transform: "rotate(0.3deg)" }}>
                 <span className="font-['Cormorant_Garamond'] text-[clamp(1.2rem,3vw,2.5rem)] text-[#e4e2dd]/40 font-light italic">
-                  achieves
+                  osiąga
                 </span>
                 <span className="font-['Space_Mono'] text-[clamp(3rem,8vw,7rem)] text-[#8c1c13] leading-none font-bold">
                   <TextScramble text="LVL 40" delay={1800} />
@@ -93,9 +93,9 @@ const Index = () => {
               transition={{ duration: 1, delay: 2 }}
               className="font-['Cormorant_Garamond'] text-[clamp(1rem,2vw,1.4rem)] text-[#e4e2dd]/50 leading-relaxed max-w-lg italic"
             >
-              Your presence is requested for a classified gathering. 
-              Formal attire recommended. Prepare for an evening of 
-              unparalleled sophistication.
+              Twoja obecność jest wymagana na tajnym spotkaniu.
+              Zalecany strój galowy. Przygotuj się na wieczór
+              niezrównanej elegancji.
             </motion.p>
           </div>
 
@@ -108,7 +108,7 @@ const Index = () => {
             style={{ transform: "rotate(0.5deg)" }}
           >
             <p className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#e4e2dd]/20 mb-6 uppercase">
-              Time to deployment
+              Czas do rozpoczęcia misji
             </p>
             <CountdownTimer />
           </motion.div>
@@ -126,15 +126,15 @@ const Index = () => {
           <div className="bg-[#0a0a0d] p-[clamp(1.5rem,3vw,3rem)] space-y-8">
             <div>
               <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#8c1c13]/60 uppercase block mb-2">
-                Date
+                Data
               </span>
               <span className="font-['Cormorant_Garamond'] text-[clamp(1.5rem,3vw,2.2rem)] text-[#e4e2dd] font-light">
-                25 April 2026
+                25 Kwietnia 2026
               </span>
             </div>
             <div>
               <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#8c1c13]/60 uppercase block mb-2">
-                Time
+                Godzina
               </span>
               <span className="font-['Cormorant_Garamond'] text-[clamp(1.5rem,3vw,2.2rem)] text-[#e4e2dd] font-light">
                 17:30 CET
@@ -142,7 +142,7 @@ const Index = () => {
             </div>
             <div>
               <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#8c1c13]/60 uppercase block mb-2">
-                Location
+                Lokalizacja
               </span>
               <span className="font-['Cormorant_Garamond'] text-[clamp(1rem,2vw,1.4rem)] text-[#e4e2dd]/80 font-light leading-relaxed block">
                 Sala pod Kasztanowcami
@@ -170,10 +170,10 @@ const Index = () => {
           style={{ transform: "rotate(0.2deg)" }}
         >
           <MagneticButton onClick={downloadICS}>
-            ↓ Download .ICS
+            ↓ Pobierz .ICS
           </MagneticButton>
           <MagneticButton href={getGoogleCalendarUrl()}>
-            + Google Calendar
+            + Kalendarz Google
           </MagneticButton>
         </motion.div>
 
@@ -185,7 +185,7 @@ const Index = () => {
           className="flex items-center justify-between border-t border-[#e4e2dd]/5 pt-8"
         >
           <span className="font-['Space_Mono'] text-[9px] tracking-[0.3em] text-[#e4e2dd]/15 uppercase">
-            This message will self-destruct
+            Ta wiadomość ulegnie samozniszczeniu
           </span>
           <span className="font-['Space_Mono'] text-[9px] tracking-[0.3em] text-[#e4e2dd]/15">
             007 // PL
