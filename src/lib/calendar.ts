@@ -3,7 +3,7 @@ export function downloadICS() {
 VERSION:2.0
 PRODID:-//Bond//MI6//EN
 BEGIN:VEVENT
-DTSTART:20260425T153000Z
+DTSTART:20260425T150000Z
 DTEND:20260426T000000Z
 SUMMARY:40. Urodziny Piotra — ŚCIŚLE TAJNE
 LOCATION:Sala pod Kasztanowcami, Wiejca 74, 05-085 Wiejca
@@ -25,7 +25,7 @@ export function getGoogleCalendarUrl() {
   const params = new URLSearchParams({
     action: "TEMPLATE",
     text: "40. Urodziny Piotra — ŚCIŚLE TAJNE",
-    dates: "20260425T153000Z/20260426T000000Z",
+    dates: "20260425T150000Z/20260426T000000Z",
     location: "Sala pod Kasztanowcami, Wiejca 74, 05-085 Wiejca",
     details: "Odprawa misyjna: Poziom 40. Dress code: Bond.",
   });
