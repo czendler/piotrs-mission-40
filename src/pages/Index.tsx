@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import NoiseOverlay from "@/components/NoiseOverlay";
-import CustomCursor from "@/components/CustomCursor";
 import CountdownTimer from "@/components/CountdownTimer";
 import TextScramble from "@/components/TextScramble";
 import MagneticButton from "@/components/MagneticButton";
@@ -11,9 +10,8 @@ const ease = [0.22, 1, 0.36, 1];
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen bg-[#070709] cursor-none overflow-hidden selection:bg-[#b8860b]/30 selection:text-[#e4e2dd]">
+    <div className="relative min-h-screen bg-[#070709] overflow-hidden selection:bg-[#b8860b]/30 selection:text-[#e4e2dd]">
       <NoiseOverlay />
-      <CustomCursor />
 
       {/* Light leaks */}
       <div className="pointer-events-none fixed inset-0 z-0">
