@@ -15,12 +15,15 @@ const TacticalMap = () => {
         href="https://maps.app.goo.gl/G4peTYTon9AsBe2FA"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute inset-0 z-20"
+        className="absolute bottom-3 right-3 z-20 font-['Space_Mono'] text-[10px] tracking-[0.3em] uppercase px-4 py-2 bg-[#b8860b] text-[#070709] font-bold hover:bg-[#d4a017] transition-colors duration-300"
         title="Otwórz w Google Maps"
-      />
+      >
+        Nawiguj →
+      </a>
+
       <iframe
         src="https://maps.google.com/maps?q=Wiejca%2074,%2005-085%20Wiejca&t=m&z=14&output=embed"
-        className="w-full h-full border-0 invert-[0.93] hue-rotate-180 brightness-[0.7] contrast-[1.3] saturate-[0.3]"
+        className="w-full h-full border-0"
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
