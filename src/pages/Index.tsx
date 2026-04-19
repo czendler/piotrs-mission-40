@@ -73,7 +73,7 @@ const Index = () => {
               transition={{ duration: 1.4, ease, delay: 0.6 }}
             >
               <p className="font-['Space_Mono'] text-[10px] tracking-[0.5em] text-[#c9a84c] mb-4 uppercase">
-                Wezwanie №040
+                Licencja na świętowanie
               </p>
               <h1
                 className="font-['Cormorant_Garamond'] text-[clamp(3.5rem,10vw,9rem)] leading-[0.85] text-[#e4e2dd] font-light"
