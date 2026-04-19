@@ -13,6 +13,18 @@ const Index = () => {
     <div className="relative min-h-screen bg-[#070709] overflow-hidden selection:bg-[#b8860b]/30 selection:text-[#e4e2dd]">
       <NoiseOverlay />
 
+      {/* Casino Royale — faint card suits */}
+      <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden select-none" aria-hidden>
+        <span
+          className="absolute font-['Cormorant_Garamond'] text-[#b8860b] leading-none"
+          style={{ fontSize: "22vw", top: "2%", right: "1%", opacity: 0.04, transform: "rotate(12deg)" }}
+        >♠</span>
+        <span
+          className="absolute font-['Cormorant_Garamond'] text-[#e4e2dd] leading-none"
+          style={{ fontSize: "16vw", bottom: "4%", left: "0%", opacity: 0.03, transform: "rotate(-8deg)" }}
+        >♦</span>
+      </div>
+
       {/* Light leaks */}
       <div className="pointer-events-none fixed inset-0 z-0">
         <div
@@ -47,8 +59,9 @@ const Index = () => {
         >
           <div className="w-2 h-2 rounded-full bg-[#b8860b] animate-pulse" />
           <span className="font-['Space_Mono'] text-[10px] tracking-[0.4em] text-[#e4e2dd]/25 uppercase">
-            Ściśle Tajne // Tylko Dla Twoich Oczu // 
+            Ściśle Tajne // Tylko Dla Twoich Oczu //
           </span>
+          <span className="font-['Cormorant_Garamond'] text-[#b8860b]/20 text-base tracking-widest">♠ ♣ ♥ ♦</span>
         </motion.div>
 
         {/* Hero section — asymmetric */}
@@ -192,7 +205,8 @@ const Index = () => {
           <span className="font-['Space_Mono'] text-[9px] tracking-[0.3em] text-[#e4e2dd]/15 uppercase">
             Ta wiadomość ulegnie samozniszczeniu
           </span>
-          <span className="font-['Space_Mono'] text-[9px] tracking-[0.3em] text-[#e4e2dd]/15">
+          <span className="font-['Space_Mono'] text-[9px] tracking-[0.3em] text-[#e4e2dd]/15 flex items-center gap-3">
+            <span className="font-['Cormorant_Garamond'] text-sm text-[#b8860b]/25">♠</span>
             007 // PL
           </span>
         </motion.div>
