@@ -2,12 +2,12 @@ const TacticalMap = () => {
   return (
     <div className="relative w-full aspect-[16/9] overflow-hidden border border-[#e4e2dd]/10">
       {/* Tactical overlay corners */}
-      <div className="absolute top-0 left-0 w-4 h-4 border-t border-l border-[#b8860b]/40 z-10" />
-      <div className="absolute top-0 right-0 w-4 h-4 border-t border-r border-[#b8860b]/40 z-10" />
-      <div className="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-[#b8860b]/40 z-10" />
-      <div className="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-[#b8860b]/40 z-10" />
+      <div className="absolute top-0 left-0 w-4 h-4 border-t border-l border-[#c9a84c]/40 z-10" />
+      <div className="absolute top-0 right-0 w-4 h-4 border-t border-r border-[#c9a84c]/40 z-10" />
+      <div className="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-[#c9a84c]/40 z-10" />
+      <div className="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-[#c9a84c]/40 z-10" />
       
-      <div className="absolute top-2 left-4 font-['Space_Mono'] text-[9px] tracking-[0.3em] text-[#b8860b]/50 z-10">
+      <div className="absolute top-2 left-4 font-['Space_Mono'] text-[9px] tracking-[0.3em] text-[#c9a84c]/50 z-10">
         PRZEKAZ SAT // NA ŻYWO
       </div>
 
@@ -15,10 +15,10 @@ const TacticalMap = () => {
         href="https://maps.app.goo.gl/G4peTYTon9AsBe2FA"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute bottom-3 right-3 z-20 font-['Space_Mono'] text-[10px] tracking-[0.3em] uppercase px-4 py-2 bg-[#b8860b] text-[#070709] font-bold hover:bg-[#d4a017] transition-colors duration-300"
+        className="absolute bottom-3 right-3 z-20 font-['Space_Mono'] text-[10px] tracking-[0.3em] uppercase px-4 py-2 bg-[#c9a84c] text-[#070709] font-bold hover:bg-[#d4a017] transition-colors duration-300"
         title="Otwórz w Google Maps"
       >
-        Nawiguj →
+        Cel podróży →
       </a>
 
       <iframe

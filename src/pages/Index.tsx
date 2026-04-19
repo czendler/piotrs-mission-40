@@ -10,13 +10,13 @@ const ease = [0.22, 1, 0.36, 1];
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen bg-[#070709] overflow-hidden selection:bg-[#b8860b]/30 selection:text-[#e4e2dd]">
+    <div className="relative min-h-screen bg-[#070709] overflow-hidden selection:bg-[#c9a84c]/30 selection:text-[#e4e2dd]">
       <NoiseOverlay />
 
       {/* Casino Royale — faint card suits */}
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden select-none" aria-hidden>
         <span
-          className="absolute font-['Cormorant_Garamond'] text-[#b8860b] leading-none"
+          className="absolute font-['Cormorant_Garamond'] text-[#c9a84c] leading-none"
           style={{ fontSize: "22vw", top: "2%", right: "1%", opacity: 0.04, transform: "rotate(12deg)" }}
         >♠</span>
         <span
@@ -30,7 +30,7 @@ const Index = () => {
         <div
           className="absolute w-[60vw] h-[60vw] rounded-full opacity-[0.04] blur-[120px]"
           style={{
-            background: "radial-gradient(circle, #b8860b 0%, transparent 70%)",
+            background: "radial-gradient(circle, #c9a84c 0%, transparent 70%)",
             top: "10%",
             right: "-10%",
             animation: "drift1 25s ease-in-out infinite alternate",
@@ -57,11 +57,11 @@ const Index = () => {
           transition={{ duration: 1.2, ease, delay: 0.3 }}
           className="flex items-center gap-4 mb-[clamp(4rem,12vh,8rem)]"
         >
-          <div className="w-2 h-2 rounded-full bg-[#b8860b] animate-pulse" />
+          <div className="w-2 h-2 rounded-full bg-[#c9a84c] animate-pulse" />
           <span className="font-['Space_Mono'] text-[10px] tracking-[0.4em] text-[#e4e2dd]/25 uppercase">
             Ściśle Tajne // Tylko Dla Twoich Oczu //
           </span>
-          <span className="font-['Cormorant_Garamond'] text-[#b8860b]/20 text-base tracking-widest">♠ ♣ ♥ ♦</span>
+          <span className="font-['Cormorant_Garamond'] text-[#c9a84c]/20 text-base tracking-widest">♠ ♣ ♥ ♦</span>
         </motion.div>
 
         {/* Hero section — asymmetric */}
@@ -72,8 +72,8 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.4, ease, delay: 0.6 }}
             >
-              <p className="font-['Space_Mono'] text-[10px] tracking-[0.5em] text-[#b8860b] mb-4 uppercase">
-                Odprawia Misyjna №040
+              <p className="font-['Space_Mono'] text-[10px] tracking-[0.5em] text-[#c9a84c] mb-4 uppercase">
+                Wezwanie №040
               </p>
               <h1
                 className="font-['Cormorant_Garamond'] text-[clamp(3.5rem,10vw,9rem)] leading-[0.85] text-[#e4e2dd] font-light"
@@ -85,18 +85,22 @@ const Index = () => {
                 <span className="font-['Cormorant_Garamond'] text-[clamp(1.2rem,3vw,2.5rem)] text-[#e4e2dd]/40 font-light italic">
                   osiąga
                 </span>
-                <span className="font-['Space_Mono'] text-[clamp(3rem,8vw,7rem)] text-[#b8860b] leading-none font-bold">
+                <span className="font-['Space_Mono'] text-[clamp(3rem,8vw,7rem)] text-[#c9a84c] leading-none font-bold">
                   <TextScramble text="LVL 40" delay={1800} />
                 </span>
               </div>
             </motion.div>
 
             <motion.div
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 1.2, ease, delay: 1.5 }}
-              className="origin-left h-[1px] bg-gradient-to-r from-[#e4e2dd]/20 to-transparent mt-10 mb-8 max-w-md"
-            />
+              className="flex items-center gap-3 mt-10 mb-8 max-w-md"
+            >
+              <div className="flex-1 h-[1px] bg-gradient-to-r from-transparent via-[#e4e2dd]/20 to-transparent" />
+              <span className="font-['Cormorant_Garamond'] text-[#c9a84c]/40 text-xs tracking-[0.5em]">♠ 007 ♠</span>
+              <div className="flex-1 h-[1px] bg-gradient-to-r from-transparent via-[#e4e2dd]/20 to-transparent" />
+            </motion.div>
 
             <motion.p
               initial={{ opacity: 0 }}
@@ -118,7 +122,7 @@ const Index = () => {
             style={{ transform: "rotate(0.5deg)" }}
           >
             <p className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#e4e2dd]/20 mb-6 uppercase">
-              Czas do rozpoczęcia misji
+              Do godziny zero
             </p>
             <CountdownTimer />
           </motion.div>
@@ -135,7 +139,7 @@ const Index = () => {
           {/* Left — Details */}
           <div className="bg-[#0a0a0d] p-[clamp(1.5rem,3vw,3rem)] space-y-8">
             <div>
-              <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#b8860b]/60 uppercase block mb-2">
+              <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#c9a84c]/60 uppercase block mb-2">
                 Data
               </span>
               <span className="font-['Cormorant_Garamond'] text-[clamp(1.5rem,3vw,2.2rem)] text-[#e4e2dd] font-light">
@@ -143,7 +147,7 @@ const Index = () => {
               </span>
             </div>
             <div>
-              <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#b8860b]/60 uppercase block mb-2">
+              <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#c9a84c]/60 uppercase block mb-2">
                 Godzina
               </span>
               <span className="font-['Cormorant_Garamond'] text-[clamp(1.5rem,3vw,2.2rem)] text-[#e4e2dd] font-light">
@@ -151,7 +155,7 @@ const Index = () => {
               </span>
             </div>
             <div>
-              <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#b8860b]/60 uppercase block mb-2">
+              <span className="font-['Space_Mono'] text-[9px] tracking-[0.4em] text-[#c9a84c]/60 uppercase block mb-2">
                 Lokalizacja
               </span>
               <span className="font-['Cormorant_Garamond'] text-[clamp(1rem,2vw,1.4rem)] text-[#e4e2dd]/80 font-light leading-relaxed block">
@@ -166,7 +170,7 @@ const Index = () => {
                 href="https://maps.app.goo.gl/7YWLgKAQNPZV72R49"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-3 font-['Space_Mono'] text-[10px] tracking-[0.2em] text-[#b8860b] hover:text-[#d4a017] transition-colors uppercase"
+                className="inline-block mt-3 font-['Space_Mono'] text-[10px] tracking-[0.2em] text-[#c9a84c] hover:text-[#d4a017] transition-colors uppercase"
               >
                 Nawiguj →
               </a>
@@ -206,7 +210,11 @@ const Index = () => {
             Ta wiadomość ulegnie samozniszczeniu
           </span>
           <span className="font-['Space_Mono'] text-[9px] tracking-[0.3em] text-[#e4e2dd]/15 flex items-center gap-3">
-            <span className="font-['Cormorant_Garamond'] text-sm text-[#b8860b]/25">♠</span>
+            <svg width="14" height="18" viewBox="0 0 14 18" fill="none" className="opacity-25" aria-hidden>
+              <path d="M1 1 L7 9 L13 1 Z" stroke="#c9a84c" strokeWidth="0.8" fill="none"/>
+              <line x1="7" y1="9" x2="7" y2="16" stroke="#c9a84c" strokeWidth="0.8"/>
+              <line x1="4" y1="16" x2="10" y2="16" stroke="#c9a84c" strokeWidth="0.8"/>
+            </svg>
             007 // PL
           </span>
         </motion.div>

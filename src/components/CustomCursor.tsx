@@ -37,7 +37,7 @@ const CustomCursor = () => {
         <div className="absolute w-8 h-[1px] bg-[#e4e2dd] top-1/2 -translate-y-1/2 -left-4" />
         <div className="absolute w-3 h-3 rounded-full border border-[#e4e2dd]/60 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
         <div
-          className="absolute w-10 h-10 rounded-full border border-[#b8860b]/30 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-spin [animation-duration:8s]"
+          className="absolute w-10 h-10 rounded-full border border-[#c9a84c]/30 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-spin [animation-duration:8s]"
         />
       </div>
     </motion.div>

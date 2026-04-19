@@ -35,7 +35,7 @@ const MagneticButton = ({ children, onClick, href, className = "" }: Props) => {
         border border-[#e4e2dd]/20 
         font-['Space_Mono'] text-[11px] tracking-[0.25em] uppercase text-[#e4e2dd]/80
         transition-[letter-spacing,border-color] duration-500
-        hover:tracking-[0.4em] hover:border-[#b8860b]/60 hover:text-[#e4e2dd]
+        hover:tracking-[0.4em] hover:border-[#c9a84c]/60 hover:text-[#e4e2dd]
         cursor-none select-none
         ${className}
       `}
