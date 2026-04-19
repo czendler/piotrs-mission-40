@@ -10,12 +10,16 @@ interface Props {
 
 const MagneticButton = ({ children, onClick, href, className = "" }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
+  const rectRef = useRef<DOMRect | null>(null);
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
+  const cacheRect = () => {
+    if (ref.current) rectRef.current = ref.current.getBoundingClientRect();
+  };
+
   const handleMouse = (e: MouseEvent) => {
-    const el = ref.current;
-    if (!el) return;
-    const rect = el.getBoundingClientRect();
+    const rect = rectRef.current;
+    if (!rect) return;
     const x = (e.clientX - rect.left - rect.width / 2) * 0.3;
     const y = (e.clientY - rect.top - rect.height / 2) * 0.3;
     setPos({ x, y });
@@ -37,6 +41,7 @@ const MagneticButton = ({ children, onClick, href, className = "" }: Props) => {
       `}
       animate={{ x: pos.x, y: pos.y }}
       transition={{ type: "spring", damping: 15, stiffness: 200 }}
+      onMouseEnter={cacheRect}
       onMouseMove={handleMouse}
       onMouseLeave={reset}
     >
