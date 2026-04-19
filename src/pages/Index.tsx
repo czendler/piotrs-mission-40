@@ -149,6 +149,14 @@ const Index = () => {
                 <br />
                 (Trasa Kampinos – Leszno)
               </span>
+              <a
+                href="https://maps.app.goo.gl/7YWLgKAQNPZV72R49"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-3 font-['Space_Mono'] text-[10px] tracking-[0.2em] text-[#b8860b] hover:text-[#d4a017] transition-colors uppercase"
+              >
+                Nawiguj →
+              </a>
             </div>
           </div>
 
