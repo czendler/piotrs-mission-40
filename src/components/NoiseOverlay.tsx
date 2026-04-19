@@ -4,21 +4,13 @@ const NoiseOverlay = () => {
   const svgRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
-    let frame: number;
     let seed = 0;
-    const animate = () => {
+    const interval = setInterval(() => {
       seed = (seed + 1) % 100;
       const turb = svgRef.current?.querySelector("feTurbulence");
       if (turb) turb.setAttribute("seed", String(seed));
-      frame = requestAnimationFrame(animate);
-    };
-    const interval = setInterval(() => {
-      frame = requestAnimationFrame(animate);
-    }, 120);
-    return () => {
-      clearInterval(interval);
-      cancelAnimationFrame(frame);
-    };
+    }, 200);
+    return () => clearInterval(interval);
   }, []);
 
   return (

@@ -10,7 +10,7 @@ const CustomCursor = () => {
     const move = (e: MouseEvent) => {
       cursorX.set(e.clientX);
       cursorY.set(e.clientY);
-      if (!visible) setVisible(true);
+      setVisible(true);
     };
     const leave = () => setVisible(false);
     const enter = () => setVisible(true);
@@ -22,7 +22,7 @@ const CustomCursor = () => {
       document.removeEventListener("mouseleave", leave);
       document.removeEventListener("mouseenter", enter);
     };
-  }, [visible, cursorX, cursorY]);
+  }, [cursorX, cursorY]);
 
   if (typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches) return null;
 
@@ -36,10 +36,8 @@ const CustomCursor = () => {
         <div className="absolute w-[1px] h-8 bg-[#e4e2dd] left-1/2 -translate-x-1/2 -top-4" />
         <div className="absolute w-8 h-[1px] bg-[#e4e2dd] top-1/2 -translate-y-1/2 -left-4" />
         <div className="absolute w-3 h-3 rounded-full border border-[#e4e2dd]/60 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
-        <motion.div
-          className="absolute w-10 h-10 rounded-full border border-[#b8860b]/30 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-          animate={{ rotate: 360 }}
-          transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+        <div
+          className="absolute w-10 h-10 rounded-full border border-[#b8860b]/30 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-spin [animation-duration:8s]"
         />
       </div>
     </motion.div>
