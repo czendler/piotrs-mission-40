@@ -92,7 +92,7 @@ const Index = () => {
               className="font-['Cormorant_Garamond'] text-[clamp(1rem,2vw,1.4rem)] text-[#e4e2dd]/50 leading-relaxed max-w-lg italic"
             >
               Twoja obecność jest wymagana na tajnym spotkaniu.
-              Zalecany strój gotowy do tańca.
+              Zapraszamy do Casino Royale.
             </motion.p>
           </div>
 
