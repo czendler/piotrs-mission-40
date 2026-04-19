@@ -108,8 +108,7 @@ const Index = () => {
               transition={{ duration: 1, delay: 2 }}
               className="font-['Cormorant_Garamond'] text-[clamp(1rem,2vw,1.4rem)] text-[#e4e2dd]/50 leading-relaxed max-w-lg italic"
             >
-              Twoja obecność jest wymagana na tajnym spotkaniu.
-              Zapraszamy do Casino Royale.
+              Kieliszek w dłoni, parkiet do dyspozycji.
             </motion.p>
           </div>
 
